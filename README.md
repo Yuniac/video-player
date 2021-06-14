@@ -1,2 +1,2 @@
 # video-player
-This video player was a tutorial by MDN
+This video player was done by tutorial from MDN
