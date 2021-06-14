@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player example</title>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="player">
+        <video controls>
+            <source src="ramblues.mp4" type="video/mp4"> <!-- fallback content here -->
+        </video>
+        <div class="controls">
+            <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+            <button class="stop" data-icon="S" aria-label="stop"></button>
+            <div class="timer" id="seek">
+                <div></div><span aria-label="timer">00:00</span></div>
+            <button class="rwd" data-icon="B <" aria-label="rewind"></button>
+            <button class="fwd" data-icon="F >" aria-label="fast forward"></button>
+            <input type="range" name="volume" id="volume" min="0" max="10" step="0.5">
+        </div>
+    </div>
+    <script src="custom-controls.js"></script>
+</body>
+
+</html>
